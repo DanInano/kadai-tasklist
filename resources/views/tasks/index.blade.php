@@ -23,7 +23,7 @@
                 <td>
                     {!!Form::model($task,['route'=>['tasks.destroy',$task->id],'method'=>'delete'])!!}
                         {!! Form::submit('完了',['class'=>'btn btn-sm btn-primary'])!!}
-                    {!!!Form::close()!!}
+                    {!!Form::close()!!}
                 </td>
             </tr>                
             @endforeach
