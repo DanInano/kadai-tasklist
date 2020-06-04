@@ -1,5 +1,6 @@
 @extends ('layouts.app')
 
+
 @section('content')
 
     <h1>タスク詳細</h1>
@@ -8,6 +9,10 @@
         <tr>
             <th>ID</th>
             <td>{{$task->id}}</td>
+        </tr>
+        <tr>
+            <th>スタッツ</th>
+            <th>{{$task->status}}</th>
         </tr>
         <tr>
             <th>内容</th>

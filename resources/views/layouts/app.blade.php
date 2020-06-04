@@ -22,9 +22,9 @@
                     <li class="nav-item">{!!link_to_route('tasks.create','タスク追加',[],['class'=>'nav-link text-dark'])!!}</li>
                 </ul>
             </div>
-            
         </header>
         <div class="container">
+            @include ('common.alert')
             @yield('content')
         </div>
         
