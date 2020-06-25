@@ -22,11 +22,11 @@
             <tr>
                 <td>{!! link_to_route('tasks.show',$task->id,['task'=>$task->id]) !!}</td>
                 <td>{{$task->status}}</td>
-                <td>{{$task->content}}</td> 
+                <td>{{$task->content}}</td>
                 <td>
-                    {!!Form::model($task,['route'=>['tasks.destroy',$task->id],'method'=>'delete'])!!}
+                    {!! Form::model($task, ['route' => ['tasks.destroy', $task->id], 'method' => 'delete']) !!}
+                        {!! Form::submit('完了', ['class' => 'btn btn-danger']) !!}
                     {!!Form::close()!!}
-                    {!! Form::submit('完了',['class'=>'btn btn-sm btn-primary'])!!}
                 </td>
             </tr>                
             @endforeach
